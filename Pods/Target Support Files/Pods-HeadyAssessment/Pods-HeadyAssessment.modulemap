@@ -1,0 +1,6 @@
+framework module Pods_HeadyAssessment {
+  umbrella header "Pods-HeadyAssessment-umbrella.h"
+
+  export *
+  module * { export * }
+}

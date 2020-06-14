@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SubProductCell" rowHeight="172" id="XSr-9E-M3m" customClass="SubProductCell" customModule="Heady" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XSr-9E-M3m" id="M8F-BG-e2Z">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0X-GU-FUX">
+                        <rect key="frame" x="12" y="10" width="358" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_default_background_image" translatesAutoresizingMaskIntoConstraints="NO" id="rtW-bh-kSC">
+                                <rect key="frame" x="10" y="5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="oQe-nJ-VrX"/>
+                                    <constraint firstAttribute="height" constant="80" id="zXJ-RM-SbU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22M-SF-hxX">
+                                <rect key="frame" x="102" y="45" width="244" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="22M-SF-hxX" secondAttribute="trailing" constant="12" id="5b6-U6-91X"/>
+                            <constraint firstAttribute="height" constant="90" id="6N0-vb-8Dt"/>
+                            <constraint firstItem="rtW-bh-kSC" firstAttribute="centerY" secondItem="Q0X-GU-FUX" secondAttribute="centerY" id="Q9n-0x-zph"/>
+                            <constraint firstItem="rtW-bh-kSC" firstAttribute="leading" secondItem="Q0X-GU-FUX" secondAttribute="leading" constant="10" id="m2a-kg-3LE"/>
+                            <constraint firstItem="22M-SF-hxX" firstAttribute="leading" secondItem="rtW-bh-kSC" secondAttribute="trailing" constant="12" id="xTw-oZ-esL"/>
+                            <constraint firstItem="22M-SF-hxX" firstAttribute="centerY" secondItem="Q0X-GU-FUX" secondAttribute="centerY" id="zHW-SK-Bqk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Q0X-GU-FUX" secondAttribute="bottom" id="Tl2-dE-1w9"/>
+                    <constraint firstItem="Q0X-GU-FUX" firstAttribute="top" secondItem="M8F-BG-e2Z" secondAttribute="top" constant="10" id="XN5-JI-dJj"/>
+                    <constraint firstAttribute="trailing" secondItem="Q0X-GU-FUX" secondAttribute="trailing" constant="12" id="ezt-sh-0PL"/>
+                    <constraint firstItem="Q0X-GU-FUX" firstAttribute="leading" secondItem="M8F-BG-e2Z" secondAttribute="leading" constant="12" id="pqH-qM-bJ3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="catenameLabel" destination="22M-SF-hxX" id="6zf-1l-O1X"/>
+                <outlet property="containerView" destination="M8F-BG-e2Z" id="nZg-eI-0f4"/>
+            </connections>
+            <point key="canvasLocation" x="377.60000000000002" y="299.55022488755623"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_default_background_image" width="302" height="302"/>
+    </resources>
+</document>

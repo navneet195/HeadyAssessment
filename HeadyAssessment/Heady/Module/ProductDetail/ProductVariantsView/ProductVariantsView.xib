@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductVariantsView" customModule="Heady_io" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollviewColor" destination="7el-9x-91b" id="kv2-jX-tRD"/>
+                <outlet property="scrollviewSize" destination="qR2-lx-plq" id="EOX-2d-XKG"/>
+                <outlet property="scrollviewTax" destination="tno-Qf-8OO" id="6yQ-hF-OCe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GL-o7-qVc">
+                    <rect key="frame" x="12" y="2.5" width="124" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n96-oR-yTc">
+                    <rect key="frame" x="12" y="34" width="390" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljE-5x-qrU">
+                            <rect key="frame" x="0.0" y="5" width="44" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="KqK-1h-MeU"/>
+                                <constraint firstAttribute="width" constant="44" id="Sj2-C1-4CF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7el-9x-91b">
+                            <rect key="frame" x="64" y="7" width="326" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="7Yf-XV-zgq"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="SGK-fB-Ly8"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ljE-5x-qrU" firstAttribute="centerY" secondItem="n96-oR-yTc" secondAttribute="centerY" id="cXb-3Z-9tP"/>
+                        <constraint firstAttribute="height" constant="42" id="e7d-3G-9VG"/>
+                        <constraint firstItem="ljE-5x-qrU" firstAttribute="leading" secondItem="n96-oR-yTc" secondAttribute="leading" id="nSK-oA-hcw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afn-zd-e3L">
+                    <rect key="frame" x="12" y="81" width="390" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgc-FW-ME8">
+                            <rect key="frame" x="0.0" y="5" width="44" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="0Kd-pi-dZH"/>
+                                <constraint firstAttribute="height" constant="32" id="kMC-yt-OVC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qR2-lx-plq">
+                            <rect key="frame" x="64" y="7" width="326" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="slE-IO-Yby"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="E8Z-t0-GLs"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Sgc-FW-ME8" firstAttribute="leading" secondItem="Afn-zd-e3L" secondAttribute="leading" id="2K0-GE-STd"/>
+                        <constraint firstAttribute="height" constant="42" id="ZCu-VX-Sba"/>
+                        <constraint firstItem="Sgc-FW-ME8" firstAttribute="centerY" secondItem="Afn-zd-e3L" secondAttribute="centerY" id="oXN-Df-hDV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-l7-gay">
+                    <rect key="frame" x="12" y="128" width="390" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsS-Rt-dG6">
+                            <rect key="frame" x="0.0" y="5" width="44" height="32"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="08N-Xe-dvc"/>
+                                <constraint firstAttribute="width" constant="44" id="e5a-59-t8V"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tno-Qf-8OO">
+                            <rect key="frame" x="64" y="7" width="326" height="30"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="0d4-A2-XS3"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="awA-2Q-s4T"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GsS-Rt-dG6" firstAttribute="centerY" secondItem="ubi-l7-gay" secondAttribute="centerY" id="88S-dc-vvQ"/>
+                        <constraint firstItem="GsS-Rt-dG6" firstAttribute="leading" secondItem="ubi-l7-gay" secondAttribute="leading" id="fRm-zP-xA9"/>
+                        <constraint firstAttribute="height" constant="42" id="xXu-yK-vuF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ubi-l7-gay" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="3du-rK-mRx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ubi-l7-gay" secondAttribute="bottom" constant="30" id="5SC-F4-XUT"/>
+                <constraint firstItem="ubi-l7-gay" firstAttribute="top" secondItem="Afn-zd-e3L" secondAttribute="bottom" constant="5" id="Aeu-1P-gc3"/>
+                <constraint firstItem="n96-oR-yTc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Bho-lZ-nSB"/>
+                <constraint firstAttribute="trailing" secondItem="Afn-zd-e3L" secondAttribute="trailing" constant="12" id="E3E-8s-X6U"/>
+                <constraint firstItem="Afn-zd-e3L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="HCZ-2z-Zwg"/>
+                <constraint firstItem="4GL-o7-qVc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Nc7-dZ-PfT"/>
+                <constraint firstItem="Afn-zd-e3L" firstAttribute="top" secondItem="n96-oR-yTc" secondAttribute="bottom" constant="5" id="hgt-pP-lff"/>
+                <constraint firstItem="n96-oR-yTc" firstAttribute="top" secondItem="4GL-o7-qVc" secondAttribute="bottom" constant="10" id="hij-Pa-O82"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ubi-l7-gay" secondAttribute="trailing" constant="12" id="ljZ-XG-1A3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n96-oR-yTc" secondAttribute="trailing" constant="12" id="oWx-rr-OC1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+</document>

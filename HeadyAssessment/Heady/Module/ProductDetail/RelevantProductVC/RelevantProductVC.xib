@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RelevantProductVC" customModule="Heady_io" customModuleProvider="target">
+            <connections>
+                <outlet property="childTableview" destination="Iaf-kg-hi6" id="w47-zg-T7r"/>
+                <outlet property="titleLable" destination="9hF-jP-IOl" id="u70-M9-zsH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="589"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-kg-hi6">
+                    <rect key="frame" x="0.0" y="24" width="414" height="565"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3ds-ht-N70"/>
+                        <outlet property="delegate" destination="-1" id="zL8-Hw-iWr"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hF-jP-IOl">
+                    <rect key="frame" x="12" y="0.0" width="390" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9Dp-H3-LA2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Iaf-kg-hi6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Qc-ff-xB1"/>
+                <constraint firstAttribute="trailing" secondItem="9hF-jP-IOl" secondAttribute="trailing" constant="12" id="2n4-9r-Da8"/>
+                <constraint firstItem="Iaf-kg-hi6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4iq-84-1bh"/>
+                <constraint firstItem="9hF-jP-IOl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="65z-bv-H0x"/>
+                <constraint firstItem="Iaf-kg-hi6" firstAttribute="top" secondItem="9hF-jP-IOl" secondAttribute="bottom" constant="4" id="Sqe-KO-9i7"/>
+                <constraint firstItem="9hF-jP-IOl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bq1-Qr-1bf"/>
+                <constraint firstAttribute="bottom" secondItem="Iaf-kg-hi6" secondAttribute="bottom" id="wn7-hl-tGB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="142.02898550724638" y="-204.57589285714286"/>
+        </view>
+    </objects>
+</document>

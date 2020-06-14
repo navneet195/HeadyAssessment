@@ -1,0 +1,16 @@
+PODS:
+  - LIHImageSlider (1.0.8)
+
+DEPENDENCIES:
+  - LIHImageSlider
+
+SPEC REPOS:
+  trunk:
+    - LIHImageSlider
+
+SPEC CHECKSUMS:
+  LIHImageSlider: ddf90c3a07e6f571b0e57629177a49eaf5bf15a3
+
+PODFILE CHECKSUM: cf22e5d02c9c354f00f47fc8423e9fb240b470a5
+
+COCOAPODS: 1.8.4
